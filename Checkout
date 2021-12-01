@@ -1,0 +1,14 @@
+#Welcome to The Checkout Programm
+
+price     = float(input("Specify the price: "))
+payment   = float(input("The customer pays: "))
+
+print('given:', payment, 'price: ', price)
+
+discount         = float(input("Discount in %: "))
+discount_in_euro = price/100 * discount
+discounted_price = price - discount_in_euro
+change           = payment - discounted_price
+
+print("The Price with",discount,'% Discount is',discounted_price)
+print('change: ', change)
