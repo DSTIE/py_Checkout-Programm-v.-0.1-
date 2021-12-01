@@ -6,11 +6,10 @@ discount  = float(input("Discount in %: "))
 discount_in_euro = price/100 * discount
 discounted_price = price - discount_in_euro
 
-print(discounted_price)
-print("The Price with",discount,'% Discount is',discounted_price)
+print("The Price with",discount,'% Discount, is',discounted_price)
 
-payment = float(input("The customer pays: "))
-change  = payment - discounted_price
+payment        = float(input("The customer pays: "))
+change         = payment - discounted_price
 
-print('given:', payment, 'price: ', discounted_price)
-print('change: ', change)
+print('given:', payment, 'price:', discounted_price)
+print('change:', change)
